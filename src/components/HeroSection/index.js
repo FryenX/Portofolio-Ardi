@@ -38,6 +38,7 @@ const Herobg = styled.div`
     padding: 0 30px;
     -webkit-transform: translateX(-50%)  translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 
     @media screen and (max-width: 960px) {
         padding: 0 0;
