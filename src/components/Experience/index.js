@@ -71,7 +71,7 @@ const Experience = () => {
         <Container id ="experience">
             <Wrapper>
                 <Title>Experience</Title>
-                <Desc>Bere are some of my projects</Desc>
+                <Desc>Here are some of my projects</Desc>
                 <TimelineSection>
                     <Timeline>
                         {experiences.map((experience, index)=> (
