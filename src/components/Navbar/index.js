@@ -82,7 +82,7 @@ const NavLink = styled.a`
     }
 `;
 
-const GithubButton = styled.button`
+const GithubButton = styled.a`
     background-color: transparent;
     color: ${({ theme }) => theme.primary};
     border: 1px solid ${({ theme }) => theme.primary};
@@ -93,6 +93,8 @@ const GithubButton = styled.button`
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
     height: 70%; 
     :hover {
         background-color: ${({ theme }) => theme.primary};
@@ -102,6 +104,7 @@ const GithubButton = styled.button`
         font-size: 0.8rem;
     }
 `;
+
 const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
@@ -134,7 +137,6 @@ const MobileMenu = styled.div`
     transition: all 0.3s ease-in-out;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     border-radius: 0 0 20px 20px;
-    border-radius: 8px;
     backdrop-filter: blur(20px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     opacity: ${({ open }) => (open ? '1' : '0')};

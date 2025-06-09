@@ -274,15 +274,6 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoq0dz_7LlQ35iaheUshoSidyBPFdwrEPvteNuOJngYrLDRjVGpucmPFZrFus2dYHA5RIHsWmC9cOuQ4TORN5aF0IA_WEThR0DuEyrX4SRpfqO2UPVegR9-QXuxYry6SWAFZqkTke6CcNQv3RXv34bvj9z3vDpylPiQmCpDy47W7DYeqBYV3q-rrwR/s320/GKL1_Politeknik%20Negeri%20Bali%20-%20Koleksilogo.com.jpg",
-    school: "Politeknik Negeri Bali",
-    date: "2023 - Present",
-    grade: "IPK 3.88",
-    desc: "Currently pursuing a Diploma 3 (D3) degree in Computer Management with a major in Information Technology. Gaining practical and theoretical knowledge in software development, database management, and IT systems.",
-    degree: "Diploma 3 (D3) in Computer Management – Information Technology"
-  },
-  {
-    id: 2,
     img: "https://ugc.production.linktr.ee/44e906a7-a1f1-4e45-9387-55ddc9763b8e_Logo-SMA-N-1-Penebel-logo-PNG--4-.png?io=true&size=avatar-v3_0",
     school: "SMA Negeri 1 Penebel",
     date: "2021 - 2023",
@@ -291,7 +282,7 @@ export const education = [
     degree: "Senior High School Diploma – Science Major"
   },
   {
-    id: 3,
+    id: 2,
     img: "",
     school: "SMP Negeri 1 Penebel",
     date: "2017 - 2020",
