@@ -227,7 +227,18 @@ const index = ({ openModal, setOpenModal }) => {
                     )}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        <Button
+                            href={project?.webapp || "#"}
+                            target="_blank"
+                            disabled={!project?.webapp}
+                            style={{
+                                pointerEvents: !project?.webapp ? "none" : "auto",
+                                opacity: !project?.webapp ? 0.5 : 1,
+                                cursor: !project?.webapp ? "not-allowed" : "pointer"
+                            }}
+                        >
+                            View Live App
+                        </Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>

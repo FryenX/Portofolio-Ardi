@@ -75,7 +75,7 @@ const Top = styled.div`
 
 const Logo = styled.img`
     height: 50px;
-    background: #000;
+    background: #fff;
     border-radius: 10px;
     margin-top: 4px;
 

@@ -22,6 +22,7 @@ const Nav = styled.div`
 `;
 
 const NavContainer = styled.div`
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -125,20 +126,20 @@ const MobileMenu = styled.div`
     justify-content: center;
     gap: 16px;
     position: absolute;
-    top: 80;
+    top: 80px; /* <- fix: use px */
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background-color: ${({ theme }) => theme.card_light + 99};
+    background-color: ${({ theme }) => theme.card_light + '99'};
     transition: all 0.3s ease-in-out;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
-    border-radius: 0 0 20 20px;
+    border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     opacity: ${({ open }) => (open ? '1' : '0')};
-    z-index: ${({ open }) => (open ? '1' : '-1')};
+    z-index: ${({ open }) => (open ? '999' : '-1')};
 `;
 
-const MobileMenuLinks = styled(linkR)`
+const MobileMenuLinks = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
